@@ -1,0 +1,137 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671
+{\fonttbl\f0\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red127\green0\blue85;\red106\green62\blue62;\red63\green127\blue95;
+}
+{\*\expandedcolortbl;;\csgenericrgb\c49804\c0\c33333;\csgenericrgb\c41569\c24314\c24314;\csgenericrgb\c24706\c49804\c37255;
+}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs22 \cf2 public\cf0  \cf2 class\cf0  SkillPractice \{\
+\cf2 public\cf0  \cf2 static\cf0  \cf2 void\cf0  main(String[] \cf3 args\cf0 ) \{\
+\
+SkillPractice \cf3 skills\cf0  = \cf2 new\cf0  SkillPractice();\
+          	\cf3 skills\cf0 .skill1();\
+          	\cf3 skills\cf0 .skill2();\
+          	\cf3 skills\cf0 .skill3();\
+          	\cf3 skills\cf0 .skill4();\
+          	\cf3 skills\cf0 .skill5();\
+\}\
+\
+\cf2 void\cf0  skill1() \{\
+\pard\pardeftab720\partightenfactor0
+\cf4 // Use pop-ups for the following.\cf0 \
+\cf4 // Ask the user how many dimes they have\cf0 \
+\
+String dime = JoptionPane.showInputMethod(\'93How many dimes do you have\'94);\
+int i = Integer.parseInt(dime);\
+\
+\cf4 // Tell them how many cents they have (hint multiply by 10)\cf0 \
+i * 10;\
+main.system.println(i + \'93\'94);\
+\
+\
+\cf4 // Ask the user how tall they are (inches)\cf0 \
+\
+String inches = JoptionPane.showInputMethod(\'93How many inches tall are you?\'94);\
+\pard\pardeftab720\partightenfactor0
+\cf0 int e = Integer.parseInt(inches);\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf4 // If they are shorter than 36 inches, tell them to eat their \ul Wheaties\cf0 \ulnone \
+\
+if (e < 36)\{\
+\
+JoptionPane.showMessageDialog(null, \'93You are Wheaties\'94);\
+\
+\}\
+\
+\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 void\cf0  skill2() \{ \cf4 // Write a loop to print every third number between 1 and 30 to the console \cf0 \
+\
+\
+\
+for(int i=0; i<30; i++)\{\
+\
+if(i % 3 == 0)\{\
+\
+main.system.println(i);\
+\
+\}\
+\
+\}\
+\
+\
+\
+\}\
+\
+\cf2 void\cf0  skill3() \{ \cf4 // Get a random number that is less than 20 and print it to the console \cf0 \
+\
+Random random = new Random;\
+random.getNumber(0, 20);\
+main.system.println(random);\
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 // Get another random number that is less than 10 and print it to the console \cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 Random random1 = new Random;\
+random1.getNumber(0, 10);\
+main.system.println(random1);\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf4 // Using a pop-up, tell the user the difference between the numbers // Hint: use subtraction \cf0 \
+\
+random -= random1;\
+JoptionPane.showMessageDialog(null, random + \'93\'94);\
+\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 void\cf0  skill4() \{ \cf4 // In a pop-up, ask the user for the city they live in \cf0 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 // If they answered "\ul San\ulnone  \ul Diego\ulnone ", tell them they live in America's Finest City \cf0 \
+\
+\
+\
+\cf4 // Otherwise, tell them to move to \ul San\ulnone  \ul Diego\ulnone  \cf0 \
+\
+\
+\
+\cf4 // Create a variable - cars - and initialize it to the number of cars your family has. // If there are 0 cars, use a pop-up to display, "I bet you use public transportation." \cf0 \
+\
+\
+\
+\cf4 // If there is 1 car, use a pop-up to display the make/model of the car \cf0 \
+\
+\
+\
+\cf4 // If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them. \cf0 \
+\
+\
+\
+\}\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 void\cf0  skill5() \{ \cf4 // In a pop-up, ask the user for the name of their school \cf0 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 // In another pop-up, tell the user, that their school is a fantastic school. // You must include the name of the school in the message. \cf0 \
+\
+\
+\
+\}\
+\}\
+}
